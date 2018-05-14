@@ -1,5 +1,6 @@
 int x;
 int delta;
+int radius;
 void setup() {
   size(700, 500); // Size of canvas
   background(100, 100, 100); // Background color as rgb values
@@ -13,9 +14,12 @@ void draw() {
 ellipseMode(CENTER);
 ellipse(x,250,50,50);
  }
-{if (x > 25); 
-delta=1;
+{if (x > 0); 
+delta = 1;
+radius = 25;
 x = x + delta;
+{ x = x + radius; 
+}
 }
 
   
